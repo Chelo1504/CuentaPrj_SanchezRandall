@@ -54,10 +54,10 @@ public class Cuenta
         return saldo;
     }
     private boolean validarRetiro(double monto){
-        return (monto<=saldo && monto>0 ? true :false );
+        return (monto<=saldo ? true :false );
     }
     public static int getCantidadCuentaCreadas(){
-        return cantCuentasCreadas;
+      return cantCuentasCreadas;
     }
     public String toString(){
         String msg = "";
